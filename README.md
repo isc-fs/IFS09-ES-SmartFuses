@@ -13,6 +13,7 @@ Hardware design, KiCad schematics, PCB layout, multi-rail DC-DC power conversion
 
 [![View Work Order PDF](https://img.shields.io/badge/Work_Order-WO__ES--IFS09-blue?logo=adobeacrobatreader)](WO_ES-IFS09-SmartFuses.pdf)
 [![Download Word Document](https://img.shields.io/badge/Work_Order-DOCX-blue?logo=microsoftword)](WO_ES-IFS09-SmartFuses.docx)
+[![View Schematics](https://img.shields.io/badge/Schematics_v2.0-PDF-red?logo=adobeacrobatreader)](Schematics-2.0.pdf)
 [![CAN DBC File](https://img.shields.io/badge/CAN_DBC-SMART__FUSIBLES-orange?logo=vector)](docs/dbc/SMART_FUSIBLES.dbc)
 
 ---
@@ -188,14 +189,24 @@ All 12 channels utilize **Keystone 3568** through-hole automotive mini blade fus
 
 ### 2.5 Vehicle Output Interface: TE Connectivity AMPSEAL
 > [!IMPORTANT]
-> **Harness Backwards Compatibility Directive:**  
-> The output connector pinout is not restricted to a rigid, new schedule. Instead, **it builds directly upon last year's pinout (`PCB_FUSIBLES_XT60` v2)**. All proven vehicle branch assignments (ECU, SDC, TSAL, DASH, PDU, REFRI/Cooling, and ACU/BMS) are preserved for backwards compatibility with the vehicle harness, while the new regulated rails (12V DTI, 12V LiDAR, 19V LattePanda) and CAN lines occupy the spare/expansion pins.
+> **Harness Backwards Compatibility & Dual Keyed Connectors:**  
+> To prevent crimping and wiring errors during track assembly, the vehicle output interface splits the 35-pin harness into **two robust, keyed TE AMPSEAL headers**:
+> * **`J1` (TE Connectivity 1-776087-1):** 23-pin Horizontal Header dedicated to primary vehicle distribution branches and ground returns.
+> * **`J4` (TE Connectivity 776267-1):** 14-pin Horizontal Header dedicated to regulated converter outputs (12V, 19V), CAN bus (`CAN_H`, `CAN_L`), and sensor telemetry channels.
+> All proven vehicle branch assignments (ECU, SDC, TSAL, DASH, PDU, REFRI/Cooling, and ACU/BMS) are preserved for harness backwards compatibility.
 
 ---
 
 ## 3. PCB Layout, Mechanical & Copper Plane Architecture
 
+<p align="center">
+  <img src="docs/images/pcb_layout_2d.png" alt="IFS09 Smart Fuses 2D PCB Layout" width="550"/>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="docs/images/pcb_render_3d.png" alt="IFS09 Smart Fuses 3D Render" width="370"/>
+</p>
+
 ### 3.1 2-Layer Stackup & Copper Plane Strategy
+* **Board Dimensions:** **170.0 mm × 85.0 mm** with rounded corners.
 * **Layer Count:** Strictly specified as a **TWO-LAYER (2-Layer)** FR4 board ($T_g \ge 150^\circ\text{C}$).
 * **Copper Weight:** **2 oz (70 µm finished) copper on both Top and Bottom layers**. Total thickness: 1.6 mm.
 * **Bottom Layer (Full-Board GND Plane):**
@@ -232,6 +243,7 @@ The project specification and verification criteria are documented across the fo
 
 | Document | File Link | Description | Status |
 | :--- | :--- | :--- | :--- |
+| **Schematics Sheet** | [📄 Schematics-2.0.pdf](Schematics-2.0.pdf) | Complete KiCad schematic export with multi-rail DC-DC stages, telemetry, and protection networks. | **v2.0 (Final)** |
 | **Work Order (PDF)** | [📄 WO_ES-IFS09-SmartFuses.pdf](WO_ES-IFS09-SmartFuses.pdf) | Formal published Work Order specification generated using the official ISC team base template (`IFS_09_W_Template_Base_CB.docx`). | **Rev 1.0 (Released)** |
 | **Work Order (DOCX)** | [📄 WO_ES-IFS09-SmartFuses.docx](WO_ES-IFS09-SmartFuses.docx) | Microsoft Word source document with native Jost / IBM Plex Sans typography, cover page, and ISC table styles. | **Rev 1.0 (Released)** |
 | **CAN Database** | [📄 SMART_FUSIBLES.dbc](docs/dbc/SMART_FUSIBLES.dbc) | Vector CAN database defining messages `0x380`–`0x383` ready for ECU integration and CANoe/PCAN logging. | **v1.0 (Active)** |
@@ -246,14 +258,22 @@ IFS09-ES-SmartFuses/
 ├── docs/                              # Documentation & Database Assets
 │   ├── dbc/
 │   │   └── SMART_FUSIBLES.dbc         # Official Vector CAN DBC File
-│   ├── images/                        # Architecture & PCB Render Graphics
+│   ├── images/                        # PCB Layout & 3D Render Graphics
+│   │   ├── pcb_layout_2d.png          # 2D PCB Layout Routing View (170x85mm)
+│   │   └── pcb_render_3d.png          # 3D Populated PCB Render Model
+│   ├── SCHEMATIC_AUDIT_REPORT.md      # Electrical & Design Integrity Audit
 │   └── WORK_ORDER_SMART_FUSIBLES.md   # Synchronized Markdown Specification
-├── IFS09-SmartFuses/                  # KiCad Project Files (KiCad 9.x / 10.x)
-│   ├── 3568_Fuse_Holder/              # Keystone 3568 Footprint, Symbol & 3D STEP
-│   ├── fp-lib-table                   # Footprint Library Table
-│   ├── sym-lib-table                  # Symbol Library Table
-│   ├── SMART_FUSIBLES.dbc             # Local DBC Mapping File
-│   └── IFS09-SmartFuses.kicad_pro     # KiCad 2-Layer 2 oz Project File
+├── Smart_Fuses/                       # KiCad Project Files (KiCad E.D.A. 10.x)
+│   ├── 3dmodels/                      # 3D STEP Models for CAD Integration
+│   ├── footprints/                    # Custom Footprint Libraries (.kicad_mod)
+│   ├── symbols/                       # Custom Schematic Symbol Libraries (.kicad_sym)
+│   ├── production/                    # Fabrication Outputs (Gerbers & Drill)
+│   │   ├── Smart_Fuses.zip            # Complete Gerber & Drill Archive
+│   │   └── netlist.ipc                # IPC-D-356 Test Netlist
+│   ├── Smart_Fuses.kicad_pcb          # 2-Layer 2 oz PCB Layout File
+│   ├── Smart_Fuses.kicad_pro          # KiCad Project Configuration
+│   └── Smart_Fuses.kicad_sch          # Master KiCad Schematic Sheet
+├── Schematics-2.0.pdf                 # Latest Vector Schematic Export (v2.0)
 ├── WO_ES-IFS09-SmartFuses.pdf         # Official Work Order (Vector PDF Export)
 ├── WO_ES-IFS09-SmartFuses.docx        # Official Work Order (Base Template Word Doc)
 ├── .gitignore                         # KiCad and OS Ignore Rules

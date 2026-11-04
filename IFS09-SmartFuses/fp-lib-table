@@ -1,4 +1,0 @@
-(fp_lib_table
-  (version 7)
-  (lib (name "3568")(type "KiCad")(uri "${KIPRJMOD}/3568_Fuse_Holder")(options "")(descr "Keystone 3568 Automotive Mini Blade Fuse Footprint"))
-)

@@ -8,6 +8,8 @@ _autosave-*
 *.kicad_pcb-bak
 *.kicad_sch-bak
 fp-info-cache
+*.rpt
+_restore_backup_*/
 
 # Python cache
 __pycache__/
@@ -21,3 +23,5 @@ Thumbs.db
 ~$*
 .vscode/
 .idea/
+.history/
+.agents/
