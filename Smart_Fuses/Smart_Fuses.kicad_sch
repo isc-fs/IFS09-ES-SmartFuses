@@ -6914,7 +6914,7 @@
 					)
 				)
 			)
-			(property "Footprint" "LED_LSM0805-2P0X1P25X0P8_VCC"
+			(property "Footprint" "Smart_Fuses:LED_LSM0805-2P0X1P25X0P8_VCC"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -6970,7 +6970,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "LED_LSM0805-2P0X1P25X0P8_VCC"
+			(property "ki_fp_filters" "Smart_Fuses:LED_LSM0805-2P0X1P25X0P8_VCC"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -10400,6 +10400,16 @@
 		)
 		(uuid "34782d32-6e2a-48bc-94ef-52247c472820")
 	)
+	(text "TEL_GND y RESERVA_GND será el mismo, marrón pero bueno\n"
+		(exclude_from_sim no)
+		(at 79.756 340.106 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "3d0349fa-6ee3-48c3-9cfd-8fa438aa25f2")
+	)
 	(text "MICRO"
 		(exclude_from_sim no)
 		(at 22.86 44.958 0)
@@ -10760,6 +10770,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1f4766c6-e31a-43ce-9b70-351cfd30d816")
+	)
+	(junction
+		(at 408.604 125.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1fd1eb4d-0428-4edf-949d-c24b5d287623")
 	)
 	(junction
 		(at 560.07 59.69)
@@ -11506,6 +11522,12 @@
 		(uuid "9285cb75-03cc-4223-a602-4a43bf69de7a")
 	)
 	(junction
+		(at 406.064 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "95030ab5-a365-4ed1-b645-a04312d6e1ee")
+	)
+	(junction
 		(at 322.58 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -11914,6 +11936,12 @@
 		(uuid "ecdf0ff0-de52-4f5a-95b3-4bc1197906b3")
 	)
 	(junction
+		(at 527.05 125.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eee13ee2-a45b-4522-963f-01ef31d50710")
+	)
+	(junction
 		(at 358.14 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -12110,10 +12138,6 @@
 		(uuid "767a4208-bffa-4f90-9e15-9bd832ff770f")
 	)
 	(no_connect
-		(at 466.09 80.01)
-		(uuid "77fb451f-8419-44d0-805a-35111bc580d7")
-	)
-	(no_connect
 		(at 264.16 143.51)
 		(uuid "7d9bbfb3-7add-4b45-aa57-4d0ebb061737")
 	)
@@ -12190,10 +12214,6 @@
 		(uuid "b6ef229e-fd11-4ef2-9bbf-9b62db25e855")
 	)
 	(no_connect
-		(at 466.09 57.15)
-		(uuid "b81b40a2-663f-4f41-a3c4-85c10b2087e7")
-	)
-	(no_connect
 		(at 182.88 177.8)
 		(uuid "b97afb6f-9e34-4746-a0c0-f80c1d10bf79")
 	)
@@ -12226,20 +12246,12 @@
 		(uuid "c86a94d2-15cb-4a1d-9d8d-f40ac7d4d52c")
 	)
 	(no_connect
-		(at 466.09 153.67)
-		(uuid "c9f663a7-d208-4440-a21c-6313ed0d854f")
-	)
-	(no_connect
 		(at 68.58 101.6)
 		(uuid "cad0e7bf-3d87-4901-946e-591759ff1a7c")
 	)
 	(no_connect
 		(at 68.58 99.06)
 		(uuid "d8b8b82f-9868-43b9-bd97-9628fffbd292")
-	)
-	(no_connect
-		(at 466.09 82.55)
-		(uuid "d989f601-f88f-442d-859a-b7ea1981904c")
 	)
 	(no_connect
 		(at 466.09 67.31)
@@ -12250,20 +12262,12 @@
 		(uuid "e5dbfce2-6759-4ead-9392-955ad60a71c9")
 	)
 	(no_connect
-		(at 466.09 156.21)
-		(uuid "e702abe9-7190-4aa0-a453-6dcdc443a08d")
-	)
-	(no_connect
 		(at 68.58 93.98)
 		(uuid "e93204b0-03fa-42ba-ab64-3ee07ef71ae5")
 	)
 	(no_connect
 		(at 345.44 109.22)
 		(uuid "eab528ed-edfc-492f-8d5a-f5a75a75c980")
-	)
-	(no_connect
-		(at 466.09 130.81)
-		(uuid "f06d29b8-ddda-4160-9d6d-99f3a070df7c")
 	)
 	(no_connect
 		(at 223.52 109.22)
@@ -12779,6 +12783,16 @@
 	)
 	(wire
 		(pts
+			(xy 406.064 50.7839) (xy 406.064 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10e7a75d-4148-4d60-a19e-db302ae14a86")
+	)
+	(wire
+		(pts
 			(xy 254 101.6) (xy 254 104.14)
 		)
 		(stroke
@@ -12906,6 +12920,16 @@
 			(type default)
 		)
 		(uuid "13663add-a961-431d-9124-d53555c8f0eb")
+	)
+	(wire
+		(pts
+			(xy 466.09 82.55) (xy 463.55 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13b525ca-5d06-4ce3-8a77-c1295a27d62a")
 	)
 	(wire
 		(pts
@@ -13346,6 +13370,16 @@
 			(type default)
 		)
 		(uuid "243e8a4e-6884-46d8-8f3c-d59dae9c3771")
+	)
+	(wire
+		(pts
+			(xy 463.55 80.01) (xy 463.55 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "245d0f4f-b4d5-45a1-aade-67646fb3b29a")
 	)
 	(wire
 		(pts
@@ -13879,6 +13913,16 @@
 	)
 	(wire
 		(pts
+			(xy 408.604 125.7139) (xy 408.604 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3de59a0b-ca9e-455a-9dce-662c5c01fab7")
+	)
+	(wire
+		(pts
 			(xy 331.47 101.6) (xy 335.28 101.6)
 		)
 		(stroke
@@ -14166,6 +14210,16 @@
 			(type default)
 		)
 		(uuid "4a814c84-6055-4818-8881-55d30331e3e1")
+	)
+	(wire
+		(pts
+			(xy 466.09 80.01) (xy 463.55 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4abb2619-037b-444b-9dc9-77f41e72651b")
 	)
 	(wire
 		(pts
@@ -15589,6 +15643,16 @@
 	)
 	(wire
 		(pts
+			(xy 466.09 153.67) (xy 463.55 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7df84167-c987-4b55-a525-d34a3cb95ccf")
+	)
+	(wire
+		(pts
 			(xy 527.05 148.59) (xy 527.05 152.4)
 		)
 		(stroke
@@ -15716,6 +15780,16 @@
 			(type default)
 		)
 		(uuid "8222a254-fbf3-40a1-b544-c7c96c4a1b2a")
+	)
+	(wire
+		(pts
+			(xy 466.09 156.21) (xy 463.55 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "825dc8ab-a683-4f9d-9de8-0865f4805e2d")
 	)
 	(wire
 		(pts
@@ -16949,6 +17023,16 @@
 	)
 	(wire
 		(pts
+			(xy 463.55 153.67) (xy 463.55 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a81cd172-b2eb-4924-95eb-8345b9dd2f01")
+	)
+	(wire
+		(pts
 			(xy 228.6 295.91) (xy 234.95 295.91)
 		)
 		(stroke
@@ -17346,16 +17430,6 @@
 			(type default)
 		)
 		(uuid "b4f86d4a-220d-4884-ab39-c5627f36332a")
-	)
-	(wire
-		(pts
-			(xy 67.31 321.31) (xy 69.85 321.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b5a0f21b-2ea4-4638-a829-7bf55e858863")
 	)
 	(wire
 		(pts
@@ -17876,6 +17950,16 @@
 			(type default)
 		)
 		(uuid "cad18384-a77f-4868-9ed2-e5517dd914d6")
+	)
+	(wire
+		(pts
+			(xy 369.57 38.1) (xy 369.57 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb1906ae-27ce-4a8c-8301-d25f6f7216af")
 	)
 	(wire
 		(pts
@@ -19447,16 +19531,6 @@
 		)
 		(uuid "005bbc83-b692-43f8-af9b-2ec4b4e30436")
 	)
-	(label "TSALC"
-		(at 67.31 303.53 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "0105e18d-36f4-4675-b495-2c7f7a71c64a")
-	)
 	(label "ECU_GND"
 		(at 30.48 340.36 0)
 		(effects
@@ -19468,7 +19542,7 @@
 		(uuid "01729e82-3cdc-4026-89d2-bb88f602afef")
 	)
 	(label "DTIC"
-		(at 67.31 295.91 180)
+		(at 67.31 311.15 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -19557,7 +19631,7 @@
 		)
 		(uuid "08148350-9168-4ad8-a075-293c1a5d634b")
 	)
-	(label "24V"
+	(label "24_REG"
 		(at 157.48 25.4 0)
 		(effects
 			(font
@@ -19607,7 +19681,7 @@
 		)
 		(uuid "0e371fd0-f74e-4d2b-a372-0eca7e4376e8")
 	)
-	(label "24V"
+	(label "24_REG"
 		(at 355.6 25.4 0)
 		(effects
 			(font
@@ -19647,6 +19721,16 @@
 		)
 		(uuid "147172f8-7a11-4cbf-8853-263cbc7e2870")
 	)
+	(label "SDC_GND"
+		(at 69.85 321.31 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "14a69499-7852-4a90-a41b-08e5cc1ca248")
+	)
 	(label "GND"
 		(at 172.72 161.29 0)
 		(effects
@@ -19677,7 +19761,7 @@
 		)
 		(uuid "158c07b3-077d-4a06-9198-76a04fb8d73d")
 	)
-	(label "DV_EBSC"
+	(label "RESERVAC"
 		(at 276.86 153.67 0)
 		(effects
 			(font
@@ -19716,6 +19800,16 @@
 			(justify left bottom)
 		)
 		(uuid "1b168951-1931-4fad-b58a-0be7f30f203e")
+	)
+	(label "PDUC"
+		(at 95.25 300.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1b296ece-6a59-4854-a64e-654087725437")
 	)
 	(label "SCL"
 		(at 185.42 187.96 0)
@@ -19777,6 +19871,16 @@
 		)
 		(uuid "2293bdee-b9ee-456e-9c0e-91d944f687a2")
 	)
+	(label "ECUC"
+		(at 67.31 300.99 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "22ab6417-55f4-4ad1-ab7a-76b906fe1612")
+	)
 	(label "PDU"
 		(at 223.52 50.8 0)
 		(effects
@@ -19837,6 +19941,16 @@
 		)
 		(uuid "2833d11e-836f-4886-afb8-d6b2e151a022")
 	)
+	(label "BMSC"
+		(at 67.31 303.53 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2909095f-1b70-4019-98c4-86fa8cc1e1b2")
+	)
 	(label "3.3V"
 		(at 213.36 167.64 0)
 		(effects
@@ -19847,7 +19961,7 @@
 		)
 		(uuid "293dd104-0b28-4322-814d-be6981976fb0")
 	)
-	(label "24V"
+	(label "24_REG"
 		(at 256.54 25.4 0)
 		(effects
 			(font
@@ -19897,7 +20011,7 @@
 		)
 		(uuid "32c3452e-fe2f-49eb-b822-a26a1c8dc772")
 	)
-	(label "24V"
+	(label "24_REG"
 		(at 256.54 54.61 0)
 		(effects
 			(font
@@ -19916,6 +20030,16 @@
 			(justify left bottom)
 		)
 		(uuid "32f5f04e-2713-4e45-b2ec-e57aca7c8154")
+	)
+	(label "SDCC"
+		(at 67.31 306.07 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "33a8a21c-e212-485e-aebc-c4df8f0cf600")
 	)
 	(label "GND"
 		(at 134.62 135.89 180)
@@ -19997,16 +20121,6 @@
 		)
 		(uuid "38799f89-56e0-4dc1-8841-87bef97e1f63")
 	)
-	(label "DV_GENERALC"
-		(at 67.31 306.07 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "396d3b5f-85b2-4d8a-a7c6-72f83ff07562")
-	)
 	(label "SWDCLK"
 		(at 134.62 133.35 180)
 		(effects
@@ -20026,6 +20140,16 @@
 			(justify left bottom)
 		)
 		(uuid "3b0428fa-3203-48ce-aef3-fcf25e3a0dbc")
+	)
+	(label "DV_GENERALC"
+		(at 67.31 295.91 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3c3fe1bf-0fca-48ae-9b82-b1b02769da46")
 	)
 	(label "3.3V"
 		(at 134.62 128.27 180)
@@ -20067,7 +20191,7 @@
 		)
 		(uuid "402331bd-9cd0-4168-a4bb-cbc4c039525f")
 	)
-	(label "24V"
+	(label "24_REG"
 		(at 223.52 54.61 0)
 		(effects
 			(font
@@ -20107,16 +20231,6 @@
 		)
 		(uuid "43fbde4d-0578-4ae7-b45e-ec261e4a8658")
 	)
-	(label "PDUC"
-		(at 67.31 293.37 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "44023fd4-7fdc-45d6-a2da-76a28b266f02")
-	)
 	(label "GND"
 		(at 199.39 101.6 0)
 		(effects
@@ -20136,6 +20250,16 @@
 			(justify left bottom)
 		)
 		(uuid "454d8aea-ff1d-4223-8214-dd667443edfa")
+	)
+	(label "TRK"
+		(at 466.09 59.69 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "45bc0bea-fb7f-4470-a805-2fa504615a2b")
 	)
 	(label "TELC"
 		(at 195.58 153.67 0)
@@ -20188,12 +20312,12 @@
 		(uuid "4c8bdf06-0d32-46ee-8c87-bd6bfccb8729")
 	)
 	(label "LIDARC"
-		(at 67.31 298.45 180)
+		(at 95.25 298.45 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "4e274ba4-a748-4ef6-a49f-c81f8f548bb5")
 	)
@@ -20206,6 +20330,16 @@
 			(justify left bottom)
 		)
 		(uuid "4eabfca4-54a9-4de7-a508-95275305fd50")
+	)
+	(label "TSALC"
+		(at 67.31 293.37 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4ef36ece-889b-4ee1-bd47-beeab291dda9")
 	)
 	(label "SDA"
 		(at 388.62 114.3 0)
@@ -20237,7 +20371,7 @@
 		)
 		(uuid "53299d21-232f-4a65-be70-45120eda2835")
 	)
-	(label "24V"
+	(label "24_REG"
 		(at 289.56 25.4 0)
 		(effects
 			(font
@@ -20327,6 +20461,16 @@
 		)
 		(uuid "60e79adc-bf8c-4321-9ed7-732beb4d83f5")
 	)
+	(label "TRK"
+		(at 466.09 133.35 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "615e046d-81a3-4975-97a3-bf3636660ce6")
+	)
 	(label "12V"
 		(at 289.56 54.61 0)
 		(effects
@@ -20347,7 +20491,7 @@
 		)
 		(uuid "6345518a-82f3-41ec-b333-f369eb33cb02")
 	)
-	(label "DV_EBS"
+	(label "RESERVA"
 		(at 276.86 143.51 0)
 		(effects
 			(font
@@ -20427,16 +20571,6 @@
 		)
 		(uuid "64bbfcaa-25e2-4519-b63a-80c19d1e0457")
 	)
-	(label "BMSC"
-		(at 67.31 313.69 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "65c1e835-bb0c-4758-9f6f-c3c84bc37679")
-	)
 	(label "GND"
 		(at 158.75 101.6 0)
 		(effects
@@ -20497,17 +20631,27 @@
 		)
 		(uuid "69d63635-323a-4206-a6fe-a1519fb29913")
 	)
-	(label "SDCC"
-		(at 67.31 316.23 180)
+	(label "DASHC"
+		(at 67.31 298.45 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "6bb0e8bc-eab8-421c-ba9b-3008da7fae3e")
+		(uuid "6c4e078a-a467-4535-9fab-acbae6b84d68")
 	)
-	(label "24V"
+	(label "GND"
+		(at 463.55 156.21 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6cd21937-51a1-489a-b289-c3b6be5a01de")
+	)
+	(label "24_REG"
 		(at 190.5 25.4 0)
 		(effects
 			(font
@@ -20747,16 +20891,6 @@
 		)
 		(uuid "8687ac00-dc85-4d17-bd6b-39577b11d772")
 	)
-	(label "SDC_GND"
-		(at 95.25 300.99 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8697dd24-aa02-46bc-915a-1fd8107346e5")
-	)
 	(label "LATTEPANDAC"
 		(at 73.66 260.35 180)
 		(effects
@@ -20766,6 +20900,16 @@
 			(justify right bottom)
 		)
 		(uuid "88ce0f3b-2f22-4ecb-8e54-5f134ef4f792")
+	)
+	(label "GND"
+		(at 463.55 82.55 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "896236b9-5fb9-4b78-a8c1-8e4fda51e496")
 	)
 	(label "24Vin"
 		(at 405.13 125.73 180)
@@ -20897,7 +21041,7 @@
 		)
 		(uuid "97c40d2b-479b-4139-a5d2-00243f27567b")
 	)
-	(label "DV_EBS_GND"
+	(label "RESERVA_GND"
 		(at 30.48 294.64 0)
 		(effects
 			(font
@@ -20917,6 +21061,16 @@
 		)
 		(uuid "9a222c60-8d5b-49bf-83fb-5145e661975a")
 	)
+	(label "TELC"
+		(at 67.31 313.69 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9ad0cfd6-866f-47b0-822c-1c93c8af7065")
+	)
 	(label "SDA"
 		(at 347.98 148.59 0)
 		(effects
@@ -20926,6 +21080,16 @@
 			(justify left bottom)
 		)
 		(uuid "9b9eee1b-8ebf-4149-b130-40978bf2f6ef")
+	)
+	(label "EN"
+		(at 466.09 130.81 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9c7af9c2-b4ae-4215-a8c8-e8e1929d23b8")
 	)
 	(label "12V"
 		(at 417.83 231.14 0)
@@ -20967,7 +21131,7 @@
 		)
 		(uuid "9ed18607-415d-4fdf-bf2a-2cc2286a4e43")
 	)
-	(label "24V"
+	(label "24V_conditioned"
 		(at 137.16 264.16 0)
 		(effects
 			(font
@@ -20987,7 +21151,7 @@
 		)
 		(uuid "a101e44b-e506-45a2-a45e-7f2697e4de73")
 	)
-	(label "DV_EBS"
+	(label "RESERVA"
 		(at 223.52 80.01 0)
 		(effects
 			(font
@@ -21297,23 +21461,13 @@
 		)
 		(uuid "c85f676c-0882-4f60-a0cb-f9a262554f35")
 	)
-	(label "ECUC"
-		(at 67.31 311.15 180)
+	(label "DV_GENERAL_GND"
+		(at 67.31 316.23 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
-		)
-		(uuid "c9eccf65-56f3-409e-ad9e-338191b8d8f2")
-	)
-	(label "DV_GENERAL_GND"
-		(at 95.25 298.45 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
 		)
 		(uuid "caf41690-c90a-4aca-a556-4252338a5a3b")
 	)
@@ -21547,7 +21701,7 @@
 		)
 		(uuid "dfac2c87-2605-499b-889c-c05baf1791f9")
 	)
-	(label "24V"
+	(label "24_REG"
 		(at 157.48 54.61 0)
 		(effects
 			(font
@@ -21617,16 +21771,6 @@
 		)
 		(uuid "e2c5a94b-294d-4ee5-a23c-ffe1b4d0f79f")
 	)
-	(label "TELC"
-		(at 67.31 300.99 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e6688e3d-6331-441e-9d78-02a79f29703c")
-	)
 	(label "SDA"
 		(at 226.06 182.88 0)
 		(effects
@@ -21646,16 +21790,6 @@
 			(justify right bottom)
 		)
 		(uuid "ea5941be-4875-446b-bc9c-6d26b4ccc9d3")
-	)
-	(label "DASHC"
-		(at 67.31 308.61 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "eaf3082f-e401-425d-b823-94d7f9081d8b")
 	)
 	(label "PDUC"
 		(at 236.22 119.38 0)
@@ -21687,6 +21821,16 @@
 		)
 		(uuid "ecd0a055-cdaa-4952-8a25-fe50b9ebd10a")
 	)
+	(label "RESERVAC"
+		(at 67.31 308.61 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ee9696fb-1d44-4f25-be79-62f33c7126fd")
+	)
 	(label "LO"
 		(at 209.55 283.21 0)
 		(effects
@@ -21697,7 +21841,7 @@
 		)
 		(uuid "ef896102-0ebc-4092-abd9-68b860650163")
 	)
-	(label "24V"
+	(label "24_REG"
 		(at 223.52 25.4 0)
 		(effects
 			(font
@@ -21786,6 +21930,16 @@
 			(justify left bottom)
 		)
 		(uuid "f579fb4a-58ef-4c80-aa0d-6ee5ab8ede86")
+	)
+	(label "EN"
+		(at 466.09 57.15 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f6990a4b-c4d2-482e-a459-1cab8b072fe5")
 	)
 	(label "LIDAR_GND"
 		(at 30.48 279.4 0)
@@ -23296,7 +23450,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "LED_LSM0805-2P0X1P25X0P8_VCC"
+		(property "Footprint" "Smart_Fuses:LED_LSM0805-2P0X1P25X0P8_VCC"
 			(at 369.57 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -24533,7 +24687,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "12888400-2c0c-428d-b6c7-86af59f93b87")
-		(property "Reference" "DV_EBS1"
+		(property "Reference" "RESERVA1"
 			(at 229.87 66.0399 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24665,7 +24819,7 @@
 		(instances
 			(project "Smart_Fuses"
 				(path "/4a731890-06e4-4aa2-98c6-7f82d08483ea"
-					(reference "DV_EBS1")
+					(reference "RESERVA1")
 					(unit 1)
 				)
 			)
@@ -25325,7 +25479,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "LED_LSM0805-2P0X1P25X0P8_VCC"
+		(property "Footprint" "Smart_Fuses:LED_LSM0805-2P0X1P25X0P8_VCC"
 			(at 303.53 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -26196,7 +26350,7 @@
 				)
 			)
 		)
-		(property "Footprint" "RGY0020B"
+		(property "Footprint" "ISC_paquetes:RGY0020B"
 			(at 184.15 288.29 0)
 			(hide yes)
 			(show_name no)
@@ -26858,7 +27012,7 @@
 				)
 			)
 		)
-		(property "Footprint" "3568:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 416.8648 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -27019,7 +27173,7 @@
 				)
 			)
 		)
-		(property "Footprint" "3568:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 443.5348 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -27462,7 +27616,7 @@
 				)
 			)
 		)
-		(property "Footprint" "3568:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 536.2448 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -27849,7 +28003,7 @@
 				)
 			)
 		)
-		(property "Footprint" "3568:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 548.9448 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -27932,7 +28086,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "LED_LSM0805-2P0X1P25X0P8_VCC"
+		(property "Footprint" "Smart_Fuses:LED_LSM0805-2P0X1P25X0P8_VCC"
 			(at 336.55 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -28178,7 +28332,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "LED_LSM0805-2P0X1P25X0P8_VCC"
+		(property "Footprint" "Smart_Fuses:LED_LSM0805-2P0X1P25X0P8_VCC"
 			(at 369.57 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -28346,7 +28500,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "LED_LSM0805-2P0X1P25X0P8_VCC"
+		(property "Footprint" "Smart_Fuses:LED_LSM0805-2P0X1P25X0P8_VCC"
 			(at 171.45 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -28683,7 +28837,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "LED_LSM0805-2P0X1P25X0P8_VCC"
+		(property "Footprint" "Smart_Fuses:LED_LSM0805-2P0X1P25X0P8_VCC"
 			(at 237.49 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -29499,7 +29653,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Smart_Fuses:L_Wuerth_WE-HCI-1050"
+		(property "Footprint" "ISC_inductores:L_Vishay_IHLP-5050"
 			(at 261.62 255.27 0)
 			(hide yes)
 			(show_name no)
@@ -29664,7 +29818,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "LED_LSM0805-2P0X1P25X0P8_VCC"
+		(property "Footprint" "Smart_Fuses:LED_LSM0805-2P0X1P25X0P8_VCC"
 			(at 204.47 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -30567,7 +30721,7 @@
 				)
 			)
 		)
-		(property "Footprint" "3568:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 566.7248 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -30882,7 +31036,7 @@
 				)
 			)
 		)
-		(property "Footprint" "3568:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 540.0548 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -32609,7 +32763,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "LED_LSM0805-2P0X1P25X0P8_VCC"
+		(property "Footprint" "Smart_Fuses:LED_LSM0805-2P0X1P25X0P8_VCC"
 			(at 204.47 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -32815,7 +32969,7 @@
 				)
 			)
 		)
-		(property "Footprint" "3568:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 541.3248 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -32898,7 +33052,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "LED_LSM0805-2P0X1P25X0P8_VCC"
+		(property "Footprint" "Smart_Fuses:LED_LSM0805-2P0X1P25X0P8_VCC"
 			(at 336.55 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -33528,7 +33682,7 @@
 				)
 			)
 		)
-		(property "Value" "12.7k"
+		(property "Value" "14.7k"
 			(at 154.94 275.59 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33930,7 +34084,7 @@
 				)
 			)
 		)
-		(property "Footprint" "3568:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 548.9448 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -34315,7 +34469,7 @@
 				)
 			)
 		)
-		(property "Footprint" "3568:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 434.6448 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -34735,7 +34889,7 @@
 				)
 			)
 		)
-		(property "Footprint" "3568:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 554.0248 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -35134,7 +35288,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C_Polarized"
+		(property "Value" "220u 50V"
 			(at 45.72 25.7809 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -35145,7 +35299,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "isc_electromecanica:CP_Elec_10x10.2"
+		(property "Footprint" "Smart_Fuses:CP_Elec_10x10.2"
 			(at 42.8752 29.21 0)
 			(hide yes)
 			(show_name no)
@@ -35515,7 +35669,7 @@
 				)
 			)
 		)
-		(property "Footprint" "3568:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 570.5348 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -35846,7 +36000,7 @@
 				)
 			)
 		)
-		(property "Footprint" "3568:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 425.7548 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -35926,7 +36080,7 @@
 				)
 			)
 		)
-		(property "Footprint" "3568:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 559.1048 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -36860,7 +37014,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "LED_LSM0805-2P0X1P25X0P8_VCC"
+		(property "Footprint" "Smart_Fuses:LED_LSM0805-2P0X1P25X0P8_VCC"
 			(at 171.45 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -37638,7 +37792,7 @@
 				)
 			)
 		)
-		(property "Footprint" "3568:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 562.9148 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -37804,7 +37958,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "LED_LSM0805-2P0X1P25X0P8_VCC"
+		(property "Footprint" "Smart_Fuses:LED_LSM0805-2P0X1P25X0P8_VCC"
 			(at 303.53 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -38929,7 +39083,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7u"
+		(property "Value" "4.7n"
 			(at 515.62 77.4699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39339,7 +39493,7 @@
 				)
 			)
 		)
-		(property "Footprint" "3568:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 414.3248 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -39785,7 +39939,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "LED_LSM0805-2P0X1P25X0P8_VCC"
+		(property "Footprint" "Smart_Fuses:LED_LSM0805-2P0X1P25X0P8_VCC"
 			(at 237.49 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -40334,7 +40488,7 @@
 				)
 			)
 		)
-		(property "Footprint" "3568:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 552.7548 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -40414,7 +40568,7 @@
 				)
 			)
 		)
-		(property "Footprint" "3568:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 557.8348 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -41463,7 +41617,7 @@
 				)
 			)
 		)
-		(property "Footprint" "3568:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 423.2148 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -41543,7 +41697,7 @@
 				)
 			)
 		)
-		(property "Footprint" "3568:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 545.1348 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -41943,7 +42097,7 @@
 				)
 			)
 		)
-		(property "Footprint" "3568:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 405.0988 50.7839 0)
 			(hide yes)
 			(show_name no)
@@ -42183,7 +42337,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "LED_LSM0805-2P0X1P25X0P8_VCC"
+		(property "Footprint" "Smart_Fuses:LED_LSM0805-2P0X1P25X0P8_VCC"
 			(at 270.51 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -43403,7 +43557,7 @@
 				)
 			)
 		)
-		(property "Footprint" "3568:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 562.9148 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -43647,7 +43801,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "LED_LSM0805-2P0X1P25X0P8_VCC"
+		(property "Footprint" "Smart_Fuses:LED_LSM0805-2P0X1P25X0P8_VCC"
 			(at 270.51 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -43719,7 +43873,7 @@
 				)
 			)
 		)
-		(property "Value" "Fuse_2410_Nano2"
+		(property "Value" "JFC2410-1750FS"
 			(at 179.07 222.25 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -43729,7 +43883,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ISC_paquetes:Fuse_Littelfuse-NANO2-451_453"
+		(property "Footprint" "ISC_paquetes:Fuse_2410_6125Metric_JFC2410"
 			(at 179.07 224.79 0)
 			(hide yes)
 			(show_name no)
@@ -43809,7 +43963,7 @@
 				)
 			)
 		)
-		(property "Footprint" "3568:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 566.7248 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -44248,7 +44402,7 @@
 				)
 			)
 		)
-		(property "Footprint" "3568:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 545.1348 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -44327,7 +44481,7 @@
 				)
 			)
 		)
-		(property "Footprint" "3568:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 446.0748 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -44816,7 +44970,7 @@
 				)
 			)
 		)
-		(property "Footprint" "3568:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 407.6388 125.7139 0)
 			(hide yes)
 			(show_name no)
@@ -45377,7 +45531,7 @@
 				)
 			)
 		)
-		(property "Value" "4.7u"
+		(property "Value" "4.7n"
 			(at 518.16 147.32 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -45545,7 +45699,7 @@
 				)
 			)
 		)
-		(property "Footprint" "3568:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 432.1048 50.8 0)
 			(hide yes)
 			(show_name no)
