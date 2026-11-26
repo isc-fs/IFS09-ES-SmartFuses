@@ -10390,16 +10390,6 @@
 		)
 		(uuid "2594e672-6cdb-41c6-a49c-1719d629933b")
 	)
-	(text "This inductor should be \nrated for more than 7A\n"
-		(exclude_from_sim no)
-		(at 287.274 248.412 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "34782d32-6e2a-48bc-94ef-52247c472820")
-	)
 	(text "TEL_GND y RESERVA_GND será el mismo, marrón pero bueno\n"
 		(exclude_from_sim no)
 		(at 79.756 340.106 0)
@@ -10491,7 +10481,7 @@
 		)
 		(uuid "9e69a759-2baa-4ab4-bdd2-4e4d868bd2de")
 	)
-	(text "BUCK 12V ELECTRICAL CHARACTERISTICS (TPSM63606EXTRDLR)\n========================================================================================\nPARAMETER                | VALUE            | CONDITIONS / DESIGN DETAILS\n----------------------------------------------------------------------------------------\nInput Operating Range    | 16.3 V - 36 V    | Nominal: 24 V rail (Abs Max: 42 V)\nInput Turn-On UVLO       | ~16.3 V Rising   | Set by R8 (100k) & R9 (7.5k), ~1.5V internal hysteresis\nRegulated Output Voltage | 12.0 V           | Set by R11 (110k) & R12 (10k) with Vref = 1.0 V\nMax Continuous Current   | 6.0 A            | Rated maximum continuous load capability\nPeak / Saturation Limit  | ~8.5 A - 9.5 A   | Internal high-side cycle-by-cycle peak limit\nMax Continuous Power     | 72 W             | At 12 V / 6.0 A full rated load\nDuty Cycle (Nominal)     | ~50 %            | D = Vout / Vin = 12 V / 24 V\nSwitching Frequency      | ~2.2 MHz         | Set by R10 (6.34k) (*Recommend 400k-600k for thermal margin)\nEfficiency (Nominal)     | ~92 % - 94 %     | At 24 V in, 12 V out @ 4 A - 6 A\nBias Supply Source       | VLDOIN -> VOUT   | Pin 5 tied to 12V output to reduce internal LDO loss\nOutput Capacitance       | 88.1 uF          | 4x 22 uF (C28-C31) + 100 nF HF (C27)\nOutput Voltage Ripple    | < 25 mV pk-pk    | Low-ESR ceramic bank filter response\nInductor Configuration   | Integrated       | Internal shielded power inductor\nThermal Protection       | 165 deg C        | Automatic thermal shutdown with recovery\n========================================================================================"
+	(text "BUCK 12V ELECTRICAL CHARACTERISTICS (TPSM63606EXTRDLR)\n========================================================================================\nPARAMETER                | VALUE            | CONDITIONS / DESIGN DETAILS\n----------------------------------------------------------------------------------------\nInput Operating Range    | 16.3 V - 36 V    | Nominal: 24 V rail (Abs Max: 42 V)\nInput Turn-On UVLO       | ~16.3 V Rising   | Set by R8 (100k) & R9 (7.5k), ~1.5V internal hysteresis\nRegulated Output Voltage | 12.0 V           | Set by R11 (110k) & R12 (10k) with Vref = 1.0 V\nMax Continuous Current   | 6.0 A            | Rated maximum continuous load capability\nPeak / Saturation Limit  | ~8.5 A - 9.5 A   | Internal high-side cycle-by-cycle peak limit\nMax Continuous Power     | 72 W             | At 12 V / 6.0 A full rated load\nDuty Cycle (Nominal)     | ~50 %            | D = Vout / Vin = 12 V / 24 V\nSwitching Frequency      | ~2.2 MHz         | Set by R10 (27.4k) (*Recommend 400k-600k for thermal margin)\nEfficiency (Nominal)     | ~92 % - 94 %     | At 24 V in, 12 V out @ 4 A - 6 A\nBias Supply Source       | VLDOIN -> VOUT   | Pin 5 tied to 12V output to reduce internal LDO loss\nOutput Capacitance       | 88.1 uF          | 4x 22 uF (C28-C31) + 100 nF HF (C27)\nOutput Voltage Ripple    | < 25 mV pk-pk    | Low-ESR ceramic bank filter response\nInductor Configuration   | Integrated       | Internal shielded power inductor\nThermal Protection       | 165 deg C        | Automatic thermal shutdown with recovery\n========================================================================================"
 		(exclude_from_sim no)
 		(at 339.598 292.354 0)
 		(effects
@@ -10552,7 +10542,7 @@
 		)
 		(uuid "d523fcf3-b947-4d5d-9a8e-e8124fe07ca4")
 	)
-	(text "BUCK 17.7V SPECIFICATIONS OVERVIEW\n=================================================================\nPARAMETER          | VALUE           | DETAILS / NOTES\n-----------------------------------------------------------------\nInput Voltage Nom  | 24 V            | Nominal DC supply rail\nInput UVLO Rising  | ~20.7 V         | Set by R26 (200k) & R27 (12.7k)\nOutput Voltage     | 17.69 V (~17.7V)| Set by R31 (137k) & R30 (6.49k)\nMax Output Power   | 100 W           | Supported\nNom Output Current | 5.65 A          | At 100 W / 17.7 V load\nSwitching Freq     | ~301 kHz        | Set by R28 (33.2k)\nInductor Peak Curr | ~6.42 A         | Requires L1 (10uH) ISAT >= 10.2A\nCurrent Limit Trip | ~9.6 A @ 75C    | Set by R33 (365R, RDS(on) mode)\n================================================================="
+	(text "BUCK 17.7V SPECIFICATIONS OVERVIEW\n=================================================================\nPARAMETER          | VALUE           | DETAILS / NOTES\n-----------------------------------------------------------------\nInput Voltage Nom  | 24 V            | Nominal DC supply rail\nInput UVLO Rising  | ~17.5 V         | Set by R26 (200k) & R27 (14.7k)\nOutput Voltage     | 17.69 V (~17.7V)| Set by R31 (137k) & R30 (6.49k)\nMax Output Power   | 100 W           | Supported\nNom Output Current | 5.65 A          | At 100 W / 17.7 V load\nSwitching Freq     | ~301 kHz        | Set by R28 (33.2k)\nInductor Peak Curr | ~6.42 A         | Requires L1 (10uH) ISAT >= 13A (IHLP5050FDER100M01, 15.5A)\nCurrent Limit Trip | ~9.6 A @ 75C    | Set by R33 (365R, RDS(on) mode)\nCompensation       | Pending         | Recalcular C34-C36, R29, R32 y verificar con escalon de carga (C50/C51)\n================================================================="
 		(exclude_from_sim no)
 		(at 228.854 217.932 0)
 		(effects
@@ -10788,12 +10778,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "22287c03-5e33-49a7-8602-a3e35d3e76a0")
-	)
-	(junction
-		(at 170.18 224.79)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "23f7f375-4f9f-4a31-bd76-99e3a6322349")
 	)
 	(junction
 		(at 207.01 303.53)
@@ -14983,16 +14967,6 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 224.79) (xy 175.26 224.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "671ac483-54db-4894-be1e-03ee8d356860")
-	)
-	(wire
-		(pts
 			(xy 294.64 124.46) (xy 294.64 127)
 		)
 		(stroke
@@ -16520,16 +16494,6 @@
 			(type default)
 		)
 		(uuid "97ca3547-a13a-4806-a0f7-9998b26a0f18")
-	)
-	(polyline
-		(pts
-			(xy 271.78 251.46) (xy 304.8 251.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "985132fb-70ca-4628-b64e-abdd0568fb96")
 	)
 	(wire
 		(pts
@@ -20261,6 +20225,16 @@
 		)
 		(uuid "45bc0bea-fb7f-4470-a805-2fa504615a2b")
 	)
+	(label "24V"
+		(at 175.26 224.79 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "46388c28-be14-4348-9672-096a0caed676")
+	)
 	(label "TELC"
 		(at 195.58 153.67 0)
 		(effects
@@ -20881,7 +20855,7 @@
 		)
 		(uuid "864de3d7-390e-4dcd-9592-f4cabeebfe0a")
 	)
-	(label "19V"
+	(label "17V7"
 		(at 256.54 295.91 0)
 		(effects
 			(font
@@ -21211,7 +21185,7 @@
 		)
 		(uuid "a54ea676-b562-4180-9857-a9c0b3526777")
 	)
-	(label "19V"
+	(label "17V7"
 		(at 316.23 255.27 0)
 		(effects
 			(font
@@ -21341,7 +21315,7 @@
 		)
 		(uuid "bbb9f047-69bc-4e81-8527-d6c8ef331c01")
 	)
-	(label "24V"
+	(label "24V_conditioned"
 		(at 320.04 317.5 0)
 		(effects
 			(font
@@ -21411,7 +21385,7 @@
 		)
 		(uuid "c51da961-362a-4059-8545-df9fda213713")
 	)
-	(label "19V"
+	(label "17V7"
 		(at 355.6 54.61 0)
 		(effects
 			(font
@@ -21681,7 +21655,7 @@
 		)
 		(uuid "dc1f7a8f-e962-4d26-8344-95e6298cafcd")
 	)
-	(label "24V"
+	(label "24V_conditioned"
 		(at 140.97 224.79 0)
 		(effects
 			(font
@@ -22086,7 +22060,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "10uF 50V X7R 1210 MLCC"
 			(at 120.65 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -22178,7 +22152,7 @@
 				)
 			)
 		)
-		(property "MPN" "865080545012"
+		(property "MPN" "GRM32ER71H106KA12L"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
